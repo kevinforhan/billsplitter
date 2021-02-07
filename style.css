@@ -1,2 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
-font-family: 'Raleway', sans-serif;
+/* font-family: 'Raleway', sans-serif; */
+
+
+:root{
+    --space-cadet: #273469; 
+    --space-cadet-dark: #1e2749; 
+    --lavender-blue: #e4d9ff;   
+}
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    line-height: 1.6;
+    background: var(--space-cadet-dark);
+    font-size: 1.05rem;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.bill-divider-wrapper {
+    max-width: 1080px;
+    margin: 0 auto; 
+    background: #fff; 
+    overflow: hidden;
+}
+.title {
+    background: var(--space-cadet);
+    padding: 0.7 rem 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0 0, 0.3)
+}
+
+title h1 {
+    text-align: center; 
+    color: #fff;
+}
+.bill-inputs, .bill-output {
+    padding: 2rem 2.5rem
+}
