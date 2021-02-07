@@ -3,7 +3,6 @@ billSplitterForm.addEventListener('submit', billDivideHandler)
 
 function billDivideHandler(event) {
     event.preventDefault()
-    // console.log("ok")
     const inputs = getInputs()
     showCalculateOutput(inputs)
 }
@@ -29,7 +28,7 @@ function showCalculateOutput(input) {
     // console.log(totalTip, totalAmount, tipPerPerson, billPerPerson)
 
     document.getElementById('total-bill').innerHTML = `$ ${totalAmount.toFixed(2)}`;
-    document.getElementById('bill-per-person').innerHTML = `$ ${billPerPerson.toFixed2}`; 
+    document.getElementById('bill-per-person').innerHTML = `$ ${billPerPerson.toFixed(2)}`; 
     document.getElementById('total-tip').innerHTML = `$ ${totalTip.toFixed(2)}`
     document.getElementById('tip-per-person').innerHTML = `$ ${tipPerPerson.toFixed(2)}`
  } 
